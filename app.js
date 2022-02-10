@@ -20,11 +20,23 @@ app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
+//Home
 app.get("/", function (req, res) {
   res.render("home");
-  res.render("home", { StartingContent: homeStartingContent }); //key:value
+  res.render("home", { startingContent: homeStartingContent }); //key:value
 });
 
+//About
+app.get("/about", function (req, res) {
+  res.render("about");
+  res.render("about", { content: aboutContent });
+});
+
+//Contact
+app.get("/contact", function (req, res) {
+  res.render("contact");
+  res.render("contact", { contact: contactContent });
+});
 app.listen(3000, function () {
   console.log("Server started on port 3000");
 });
