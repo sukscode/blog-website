@@ -1,7 +1,6 @@
 {
   "name": "ejs-challenge",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "type": "module",
   "jshint.options": {
@@ -14,8 +13,17 @@
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.1",
-    "ejs": "^2.6.1",
+    "ejs": "^2.7.4",
     "express": "^4.17.2",
     "lodash": "^4.17.11"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sukscode/blog-website.git"
+  },
+  "bugs": {
+    "url": "https://github.com/sukscode/blog-website/issues"
+  },
+  "homepage": "https://github.com/sukscode/blog-website#readme",
+  "description": ""
 }
